@@ -13,6 +13,11 @@ else
   ZSH_THEME="pygmalion"
 fi
 
+if test -f "`which direnv 2>&1`"
+then
+  eval "$(direnv hook zsh)"
+fi
+
 TERM="xterm-256color"
 
 # Set to this to use case-sensitive completion
