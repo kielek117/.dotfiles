@@ -6,14 +6,14 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-if test -f "`which powerline`"
+if test -f "`which powerline 2>&1`"
 then
   ZSH_THEME="powerline"
 else
   ZSH_THEME="pygmalion"
 fi
 
-TERM="xterm-256color" 
+TERM="xterm-256color"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
